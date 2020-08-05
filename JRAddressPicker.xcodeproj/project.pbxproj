@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F495B49124DACDE100510E15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495B49024DACDE100510E15 /* AppDelegate.swift */; };
+		F495B49324DACDE100510E15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495B49224DACDE100510E15 /* SceneDelegate.swift */; };
+		F495B49524DACDE100510E15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495B49424DACDE100510E15 /* ViewController.swift */; };
+		F495B49824DACDE100510E15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F495B49624DACDE100510E15 /* Main.storyboard */; };
+		F495B49A24DACDE500510E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F495B49924DACDE500510E15 /* Assets.xcassets */; };
+		F495B49D24DACDE500510E15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F495B49B24DACDE500510E15 /* LaunchScreen.storyboard */; };
+		F495B4AE24DACF4D00510E15 /* AddressPickerContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495B4A424DACF4C00510E15 /* AddressPickerContentCell.swift */; };
+		F495B4AF24DACF4D00510E15 /* AddressPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = F495B4A524DACF4C00510E15 /* AddressPicker.xib */; };
+		F495B4B024DACF4D00510E15 /* AddressPickerContentTbCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F495B4A624DACF4C00510E15 /* AddressPickerContentTbCell.xib */; };
+		F495B4B124DACF4D00510E15 /* TsvAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495B4A724DACF4C00510E15 /* TsvAddressModel.swift */; };
+		F495B4B224DACF4D00510E15 /* AddressPickerContentTbCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495B4A824DACF4C00510E15 /* AddressPickerContentTbCell.swift */; };
+		F495B4B324DACF4D00510E15 /* AddressConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495B4A924DACF4C00510E15 /* AddressConfig.swift */; };
+		F495B4B424DACF4D00510E15 /* AddressPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495B4AA24DACF4C00510E15 /* AddressPicker.swift */; };
+		F495B4B524DACF4D00510E15 /* AddressPickerTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F495B4AB24DACF4C00510E15 /* AddressPickerTitleCell.swift */; };
+		F495B4B624DACF4D00510E15 /* AddressPickerTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F495B4AC24DACF4C00510E15 /* AddressPickerTitleCell.xib */; };
+		F495B4B724DACF4D00510E15 /* AddressPickerContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F495B4AD24DACF4D00510E15 /* AddressPickerContentCell.xib */; };
+		F495B4BA24DACF7E00510E15 /* address.tsv in Resources */ = {isa = PBXBuildFile; fileRef = F495B4B924DACF7E00510E15 /* address.tsv */; };
+		FA71AA5D6F0FFA810B0FD5CC /* Pods_JRAddressPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAECE23AAC6865895EFDF833 /* Pods_JRAddressPicker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DF2656A99BDCD2BDE32C86F /* Pods-JRAddressPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRAddressPicker.release.xcconfig"; path = "Target Support Files/Pods-JRAddressPicker/Pods-JRAddressPicker.release.xcconfig"; sourceTree = "<group>"; };
+		32CE0B3DB9D40F57739A2513 /* Pods-JRAddressPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRAddressPicker.debug.xcconfig"; path = "Target Support Files/Pods-JRAddressPicker/Pods-JRAddressPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		BAECE23AAC6865895EFDF833 /* Pods_JRAddressPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JRAddressPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F495B48D24DACDE100510E15 /* JRAddressPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRAddressPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F495B49024DACDE100510E15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F495B49224DACDE100510E15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F495B49424DACDE100510E15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F495B49724DACDE100510E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F495B49924DACDE500510E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F495B49C24DACDE500510E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F495B49E24DACDE500510E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F495B4A424DACF4C00510E15 /* AddressPickerContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressPickerContentCell.swift; sourceTree = "<group>"; };
+		F495B4A524DACF4C00510E15 /* AddressPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressPicker.xib; sourceTree = "<group>"; };
+		F495B4A624DACF4C00510E15 /* AddressPickerContentTbCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressPickerContentTbCell.xib; sourceTree = "<group>"; };
+		F495B4A724DACF4C00510E15 /* TsvAddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TsvAddressModel.swift; sourceTree = "<group>"; };
+		F495B4A824DACF4C00510E15 /* AddressPickerContentTbCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressPickerContentTbCell.swift; sourceTree = "<group>"; };
+		F495B4A924DACF4C00510E15 /* AddressConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressConfig.swift; sourceTree = "<group>"; };
+		F495B4AA24DACF4C00510E15 /* AddressPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressPicker.swift; sourceTree = "<group>"; };
+		F495B4AB24DACF4C00510E15 /* AddressPickerTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressPickerTitleCell.swift; sourceTree = "<group>"; };
+		F495B4AC24DACF4C00510E15 /* AddressPickerTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressPickerTitleCell.xib; sourceTree = "<group>"; };
+		F495B4AD24DACF4D00510E15 /* AddressPickerContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressPickerContentCell.xib; sourceTree = "<group>"; };
+		F495B4B924DACF7E00510E15 /* address.tsv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = address.tsv; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F495B48A24DACDE100510E15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA71AA5D6F0FFA810B0FD5CC /* Pods_JRAddressPicker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED06C1D9D9ED55BDE3D922EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32CE0B3DB9D40F57739A2513 /* Pods-JRAddressPicker.debug.xcconfig */,
+				1DF2656A99BDCD2BDE32C86F /* Pods-JRAddressPicker.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F495B48424DACDE100510E15 = {
+			isa = PBXGroup;
+			children = (
+				F495B48F24DACDE100510E15 /* JRAddressPicker */,
+				F495B48E24DACDE100510E15 /* Products */,
+				ED06C1D9D9ED55BDE3D922EB /* Pods */,
+				FBFC2D0AE7B0F4695677E7F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F495B48E24DACDE100510E15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F495B48D24DACDE100510E15 /* JRAddressPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F495B48F24DACDE100510E15 /* JRAddressPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F495B4B824DACF5500510E15 /* JRAddressPicker */,
+				F495B49024DACDE100510E15 /* AppDelegate.swift */,
+				F495B49224DACDE100510E15 /* SceneDelegate.swift */,
+				F495B49424DACDE100510E15 /* ViewController.swift */,
+				F495B49624DACDE100510E15 /* Main.storyboard */,
+				F495B49924DACDE500510E15 /* Assets.xcassets */,
+				F495B49B24DACDE500510E15 /* LaunchScreen.storyboard */,
+				F495B49E24DACDE500510E15 /* Info.plist */,
+				F495B4B924DACF7E00510E15 /* address.tsv */,
+			);
+			path = JRAddressPicker;
+			sourceTree = "<group>";
+		};
+		F495B4B824DACF5500510E15 /* JRAddressPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F495B4A924DACF4C00510E15 /* AddressConfig.swift */,
+				F495B4AA24DACF4C00510E15 /* AddressPicker.swift */,
+				F495B4A524DACF4C00510E15 /* AddressPicker.xib */,
+				F495B4A424DACF4C00510E15 /* AddressPickerContentCell.swift */,
+				F495B4AD24DACF4D00510E15 /* AddressPickerContentCell.xib */,
+				F495B4A824DACF4C00510E15 /* AddressPickerContentTbCell.swift */,
+				F495B4A624DACF4C00510E15 /* AddressPickerContentTbCell.xib */,
+				F495B4AB24DACF4C00510E15 /* AddressPickerTitleCell.swift */,
+				F495B4AC24DACF4C00510E15 /* AddressPickerTitleCell.xib */,
+				F495B4A724DACF4C00510E15 /* TsvAddressModel.swift */,
+			);
+			path = JRAddressPicker;
+			sourceTree = "<group>";
+		};
+		FBFC2D0AE7B0F4695677E7F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAECE23AAC6865895EFDF833 /* Pods_JRAddressPicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F495B48C24DACDE100510E15 /* JRAddressPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F495B4A124DACDE500510E15 /* Build configuration list for PBXNativeTarget "JRAddressPicker" */;
+			buildPhases = (
+				5953FC3B83CA8CB0E0F48CCD /* [CP] Check Pods Manifest.lock */,
+				F495B48924DACDE100510E15 /* Sources */,
+				F495B48A24DACDE100510E15 /* Frameworks */,
+				F495B48B24DACDE100510E15 /* Resources */,
+				A2EE4B10716E55F1BB4725B9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JRAddressPicker;
+			productName = JRAddressPicker;
+			productReference = F495B48D24DACDE100510E15 /* JRAddressPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F495B48524DACDE100510E15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "焦瑞洁";
+				TargetAttributes = {
+					F495B48C24DACDE100510E15 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = F495B48824DACDE100510E15 /* Build configuration list for PBXProject "JRAddressPicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F495B48424DACDE100510E15;
+			productRefGroup = F495B48E24DACDE100510E15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F495B48C24DACDE100510E15 /* JRAddressPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F495B48B24DACDE100510E15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F495B49D24DACDE500510E15 /* LaunchScreen.storyboard in Resources */,
+				F495B4B724DACF4D00510E15 /* AddressPickerContentCell.xib in Resources */,
+				F495B49A24DACDE500510E15 /* Assets.xcassets in Resources */,
+				F495B4AF24DACF4D00510E15 /* AddressPicker.xib in Resources */,
+				F495B4BA24DACF7E00510E15 /* address.tsv in Resources */,
+				F495B4B624DACF4D00510E15 /* AddressPickerTitleCell.xib in Resources */,
+				F495B49824DACDE100510E15 /* Main.storyboard in Resources */,
+				F495B4B024DACF4D00510E15 /* AddressPickerContentTbCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5953FC3B83CA8CB0E0F48CCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JRAddressPicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2EE4B10716E55F1BB4725B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JRAddressPicker/Pods-JRAddressPicker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JRAddressPicker/Pods-JRAddressPicker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JRAddressPicker/Pods-JRAddressPicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F495B48924DACDE100510E15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F495B4B224DACF4D00510E15 /* AddressPickerContentTbCell.swift in Sources */,
+				F495B4AE24DACF4D00510E15 /* AddressPickerContentCell.swift in Sources */,
+				F495B4B424DACF4D00510E15 /* AddressPicker.swift in Sources */,
+				F495B49524DACDE100510E15 /* ViewController.swift in Sources */,
+				F495B49124DACDE100510E15 /* AppDelegate.swift in Sources */,
+				F495B49324DACDE100510E15 /* SceneDelegate.swift in Sources */,
+				F495B4B524DACF4D00510E15 /* AddressPickerTitleCell.swift in Sources */,
+				F495B4B124DACF4D00510E15 /* TsvAddressModel.swift in Sources */,
+				F495B4B324DACF4D00510E15 /* AddressConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F495B49624DACDE100510E15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F495B49724DACDE100510E15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F495B49B24DACDE500510E15 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F495B49C24DACDE500510E15 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F495B49F24DACDE500510E15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F495B4A024DACDE500510E15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F495B4A224DACDE500510E15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32CE0B3DB9D40F57739A2513 /* Pods-JRAddressPicker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JRAddressPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Slark.JRAddressPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F495B4A324DACDE500510E15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DF2656A99BDCD2BDE32C86F /* Pods-JRAddressPicker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JRAddressPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Slark.JRAddressPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F495B48824DACDE100510E15 /* Build configuration list for PBXProject "JRAddressPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F495B49F24DACDE500510E15 /* Debug */,
+				F495B4A024DACDE500510E15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F495B4A124DACDE500510E15 /* Build configuration list for PBXNativeTarget "JRAddressPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F495B4A224DACDE500510E15 /* Debug */,
+				F495B4A324DACDE500510E15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F495B48524DACDE100510E15 /* Project object */;
+}
