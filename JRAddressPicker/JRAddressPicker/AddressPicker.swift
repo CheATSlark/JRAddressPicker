@@ -21,6 +21,8 @@ open class AddressPicker: UIView {
     
     @IBOutlet weak var titlesCollection: UICollectionView!
     @IBOutlet weak var contentsCollection: UICollectionView!
+    @IBOutlet weak var closeBtn: UIButton!
+    
     private var titlesArr = ["请选择"]
     private var titlesId = ["100000"]
     private var selectedTitleIndex = 0
@@ -37,8 +39,10 @@ open class AddressPicker: UIView {
         getAreasList()
         contentsList = [aresList]
         
+        closeBtn.setImage(BundleImage(name: "address_close"), for: .normal)
         titlesCollection.backgroundColor = JAddressTitleBgColor
     }
+    
     @IBAction func dismissAction(_ sender: Any) {
         self.removeFromSuperview()
     }

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddressPicker" customModule="_3" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddressPicker" customModule="JRAddressPicker" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -28,7 +27,6 @@
                                         <constraint firstAttribute="height" constant="44" id="yTy-E4-xeA"/>
                                     </constraints>
                                     <inset key="imageEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
-                                    <state key="normal" image="appraisl_delete"/>
                                     <connections>
                                         <action selector="dismissAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="S8Z-Zq-5gx"/>
                                     </connections>
@@ -95,13 +93,11 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="closeBtn" destination="Sef-ta-826" id="XfH-hX-cuN"/>
                 <outlet property="contentsCollection" destination="nNa-Bx-nFC" id="tIN-b8-Oft"/>
                 <outlet property="titlesCollection" destination="SJj-rD-c8Q" id="2IS-mk-1xN"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
         </view>
     </objects>
-    <resources>
-        <image name="appraisl_delete" width="31.5" height="31.5"/>
-    </resources>
 </document>
