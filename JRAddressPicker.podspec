@@ -82,7 +82,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "git@codeup.aliyun.com:5f0dd16edb0493ecef909bd5/bdd-app/23app_iOS.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "git@github.com:CheATSlark/JRAddressPicker.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -93,7 +93,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "23/BasicLayer/Base/View/AddressPicker/*"
+  spec.source_files  = "JRAddressPicker/JRAddressPicker/*"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -107,8 +107,11 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  spec.resource = "23/Resource/*.tsv"
+  spec.resource = "JRAddressPicker/*.tsv"
   # spec.resources = "Resources/*.png"
+  spec.resource_bundles = {
+  'JRAddressPicker' => ['JRAddressPicker/Assets.xcassets'] 
+  }
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

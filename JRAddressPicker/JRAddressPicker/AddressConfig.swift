@@ -31,3 +31,12 @@ func JAPickerTextWidth(textStr: String, font: UIFont, height: CGFloat) -> CGFloa
     let stringSize =  normalText.boundingRect(with: size, options: [.usesFontLeading, .usesLineFragmentOrigin], attributes: attriuteDic, context: nil).size
     return stringSize.width
 }
+
+func BundleImage(name: String) -> UIImage? {
+    let bundle = Bundle(for: AddressPicker.self)
+    if let url = bundle.url(forResource: "JRAddressPicker", withExtension: "bundle"){
+        let targetBundle = Bundle(url: url)
+        return  UIImage(named: name, in: targetBundle, compatibleWith: nil)
+    }
+    return UIImage(named: name)
+}
