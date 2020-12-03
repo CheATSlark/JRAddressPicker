@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,28 +19,28 @@
                     <rect key="frame" x="0.0" y="210" width="414" height="686"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I71-hN-T3j">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sef-ta-826">
-                                    <rect key="frame" x="370" y="4.5" width="44" height="44"/>
+                                    <rect key="frame" x="374" y="8" width="34" height="34"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" secondItem="Sef-ta-826" secondAttribute="height" multiplier="15:15" id="C9J-cx-HXv"/>
-                                        <constraint firstAttribute="height" constant="44" id="yTy-E4-xeA"/>
+                                        <constraint firstAttribute="width" secondItem="Sef-ta-826" secondAttribute="height" multiplier="1:1" id="C9J-cx-HXv"/>
+                                        <constraint firstAttribute="height" constant="34" id="yTy-E4-xeA"/>
                                     </constraints>
-                                    <inset key="imageEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
+                                    <state key="normal" image="address_close"/>
                                     <connections>
                                         <action selector="dismissAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="S8Z-Zq-5gx"/>
                                     </connections>
                                 </button>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="SJj-rD-c8Q">
-                                    <rect key="frame" x="0.0" y="0.0" width="370" height="53"/>
-                                    <color key="backgroundColor" red="0.96560519929999999" green="0.96897894139999996" blue="0.97510987520000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MPX-PT-DMz">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="24" id="MPX-PT-DMz">
                                         <size key="itemSize" width="50" height="50"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="sectionInset" minX="24" minY="8" maxX="0.0" maxY="0.0"/>
                                     </collectionViewFlowLayout>
                                     <connections>
                                         <outlet property="dataSource" destination="iN0-l3-epB" id="74r-Xc-8PT"/>
@@ -46,20 +48,20 @@
                                     </connections>
                                 </collectionView>
                             </subviews>
-                            <color key="backgroundColor" red="0.96560519929999999" green="0.96897894139999996" blue="0.97510987520000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="SJj-rD-c8Q" secondAttribute="bottom" id="1c7-cT-WKH"/>
-                                <constraint firstAttribute="height" constant="53" id="Ojl-mM-NA4"/>
+                                <constraint firstAttribute="height" constant="50" id="Ojl-mM-NA4"/>
                                 <constraint firstItem="Sef-ta-826" firstAttribute="centerY" secondItem="I71-hN-T3j" secondAttribute="centerY" id="akQ-jb-gcC"/>
                                 <constraint firstItem="SJj-rD-c8Q" firstAttribute="leading" secondItem="I71-hN-T3j" secondAttribute="leading" id="fEs-wQ-DTY"/>
                                 <constraint firstItem="SJj-rD-c8Q" firstAttribute="top" secondItem="I71-hN-T3j" secondAttribute="top" id="jQb-wA-LQC"/>
-                                <constraint firstAttribute="trailing" secondItem="Sef-ta-826" secondAttribute="trailing" id="nd4-NS-Uru"/>
+                                <constraint firstAttribute="trailing" secondItem="Sef-ta-826" secondAttribute="trailing" constant="6" id="nd4-NS-Uru"/>
                                 <constraint firstItem="Sef-ta-826" firstAttribute="leading" secondItem="SJj-rD-c8Q" secondAttribute="trailing" id="yfg-qr-qtY"/>
                             </constraints>
                         </view>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nNa-Bx-nFC">
-                            <rect key="frame" x="0.0" y="53" width="414" height="633"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <rect key="frame" x="0.0" y="50" width="414" height="636"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="xwx-uW-Z4o">
                                 <size key="itemSize" width="50" height="50"/>
                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -72,7 +74,7 @@
                             </connections>
                         </collectionView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="nNa-Bx-nFC" firstAttribute="top" secondItem="I71-hN-T3j" secondAttribute="bottom" id="892-Pn-jgp"/>
                         <constraint firstAttribute="trailing" secondItem="nNa-Bx-nFC" secondAttribute="trailing" id="Hn9-Zx-FdS"/>
@@ -84,6 +86,7 @@
                     </constraints>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="0.49628712871287134" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="zj1-ec-aDG" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="2RB-1X-Vc3"/>
@@ -91,13 +94,19 @@
                 <constraint firstAttribute="bottom" secondItem="zj1-ec-aDG" secondAttribute="bottom" id="srY-Vx-MhS"/>
                 <constraint firstItem="zj1-ec-aDG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="wGH-Y7-eRE"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="closeBtn" destination="Sef-ta-826" id="XfH-hX-cuN"/>
+                <outlet property="contentView" destination="zj1-ec-aDG" id="VGX-xX-dK2"/>
                 <outlet property="contentsCollection" destination="nNa-Bx-nFC" id="tIN-b8-Oft"/>
                 <outlet property="titlesCollection" destination="SJj-rD-c8Q" id="2IS-mk-1xN"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
         </view>
     </objects>
+    <resources>
+        <image name="address_close" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

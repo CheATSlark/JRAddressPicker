@@ -42,12 +42,12 @@ extension AddressPickerContentCell: UITableViewDataSource, UITableViewDelegate {
         let model = list[indexPath.row]
         cell.areaLb.text = model.city_name
         if model.isSelected == true{
-            cell.tickImage.isHidden = false
-            cell.toLeftConstraint.constant = 40
+//            cell.tickImage.isHidden = false
+//            cell.toLeftConstraint.constant = 40
             cell.areaLb.textColor = JAddressPickerMainColor
         }else{
             cell.tickImage.isHidden = true
-            cell.toLeftConstraint.constant = 20
+//            cell.toLeftConstraint.constant = 20
             cell.areaLb.textColor = JAPickerMTextBlackColor
         }
         return cell
