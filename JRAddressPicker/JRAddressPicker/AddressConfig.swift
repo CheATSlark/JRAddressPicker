@@ -11,9 +11,11 @@ import UIKit
 /// #F6F7F9
 let JAddressTitleBgColor = pColor(color: 0xF6F7F9)
 
-let JAddressPickerMainColor = pColor(color: 0xF07D8A)
+let JAddressPickerMainColor = pColor(color: 0xFF4C95)
 
-let JAPickerMTextBlackColor = pColor(color: 0x333333)
+let JAPickerMTextBlackColor = pColor(color: 0x222222)
+let JAPickerMTextLightColor = pColor(color: 0x999999)
+
 
 private func pColor(color: Int)->UIColor {
     

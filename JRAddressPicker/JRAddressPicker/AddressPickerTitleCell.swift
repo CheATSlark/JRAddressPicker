@@ -16,6 +16,8 @@ class AddressPickerTitleCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        titleLb.textColor = JAPickerMTextLightColor
+        idicateView.isHidden = true
         idicateView.backgroundColor  = JAddressPickerMainColor
         idicateView.layer.cornerRadius = 1.5
     }

@@ -17,7 +17,7 @@ class AddressPickerContentTbCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        tickImage.image = BundleImage(name: "address_picker_select")
+//        tickImage.image = BundleImage(name: "address_picker_select")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

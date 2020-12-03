@@ -23,6 +23,7 @@ open class AddressPicker: UIView {
     @IBOutlet weak var contentsCollection: UICollectionView!
     @IBOutlet weak var closeBtn: UIButton!
     
+    @IBOutlet weak var contentView: UIView!
     private var titlesArr = ["请选择"]
     private var titlesId = ["100000"]
     private var selectedTitleIndex = 0
@@ -33,7 +34,7 @@ open class AddressPicker: UIView {
         super.awakeFromNib()
         
         titlesCollection.register(UINib.init(nibName: "AddressPickerTitleCell", bundle: Bundle(for: AddressPicker.self)), forCellWithReuseIdentifier: "titleCell")
-        titlesCollection.contentInset = UIEdgeInsets.init(top: 0, left: 7.5, bottom: 0, right: 7.5)
+        titlesCollection.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 5)
         contentsCollection.register(UINib.init(nibName: "AddressPickerContentCell", bundle: Bundle(for: AddressPicker.self)), forCellWithReuseIdentifier: "contentCell")
         contentsCollection.isPagingEnabled = true
         getAreasList()
@@ -41,6 +42,9 @@ open class AddressPicker: UIView {
         
         closeBtn.setImage(BundleImage(name: "address_close"), for: .normal)
         titlesCollection.backgroundColor = JAddressTitleBgColor
+        contentView.corner(byRoundingCorners: [.topLeft,.topRight], radii: 12,CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 210))
+        contentView.clipsToBounds = true
+
     }
     
     @IBAction func dismissAction(_ sender: Any) {
@@ -132,9 +136,13 @@ extension AddressPicker: UICollectionViewDelegate, UICollectionViewDataSource, U
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "titleCell", for: indexPath) as! AddressPickerTitleCell
             cell.titleLb.text = titlesArr[indexPath.row]
             if indexPath.row == selectedTitleIndex {
-                cell.idicateView.isHidden = false
+                cell.titleLb.textColor = JAPickerMTextBlackColor
+                cell.titleLb.font = UIFont.init(name: "PingFangSC-Semibold", size: 16)
+//                cell.idicateView.isHidden = false
             }else{
-                cell.idicateView.isHidden = true
+//                cell.idicateView.isHidden = true
+                cell.titleLb.textColor = JAPickerMTextLightColor
+                cell.titleLb.font = UIFont.init(name: "PingFangSC-Regular", size: 16)
             }
             return cell
         }else{
@@ -190,8 +198,16 @@ extension AddressPicker: UICollectionViewDelegate, UICollectionViewDataSource, U
             return contentsCollection.bounds.size
         }else{
             let titleStr = titlesArr[indexPath.row]
-            let width = JAPickerTextWidth(textStr: titleStr, font: UIFont.systemFont(ofSize: 16), height: 20) + 25
-            return CGSize.init(width: width, height: 53)
+            if indexPath.row == selectedTitleIndex {
+                let font = UIFont.init(name: "PingFangSC-Semibold", size: 16)!
+                let width = JAPickerTextWidth(textStr: titleStr, font: font, height: 22)
+                return CGSize.init(width: width, height: 42)
+            }else{
+                let font = UIFont.init(name: "PingFangSC-Regular", size: 16)!
+                let width = JAPickerTextWidth(textStr: titleStr, font: font, height: 22)
+                return CGSize.init(width: width, height: 42)
+            }
+           
         }
     }
     
@@ -204,10 +220,10 @@ extension AddressPicker: UICollectionViewDelegate, UICollectionViewDataSource, U
                 
                 self.contentsCollection.scrollToItem(at: IndexPath.init(row: indexPath.row, section: 0), at: .right, animated: true)
                 let lastCell = collectionView.cellForItem(at: IndexPath.init(row: selectedTitleIndex, section: 0)) as? AddressPickerTitleCell
-                lastCell?.idicateView.isHidden = true
+//                lastCell?.idicateView.isHidden = true
                 
                 let cell = collectionView.cellForItem(at: indexPath) as? AddressPickerTitleCell
-                cell?.idicateView.isHidden = false
+//                cell?.idicateView.isHidden = false
             }
         }
     }
@@ -219,4 +235,20 @@ extension AddressPicker: UICollectionViewDelegate, UICollectionViewDataSource, U
         }
     }
     
+}
+
+
+extension UIView {
+    /// 部分圆角
+    ///
+    /// - Parameters:
+    ///   - corners: 需要实现为圆角的角，可传入多个
+    ///   - radii: 圆角半径
+    func corner(byRoundingCorners corners: UIRectCorner, radii: CGFloat, _ maskBounds: CGRect? = nil) {
+        let maskPath = UIBezierPath(roundedRect: maskBounds ?? bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radii, height: radii))
+        let maskLayer = CAShapeLayer()
+        maskLayer.frame = bounds
+        maskLayer.path = maskPath.cgPath
+        layer.mask = maskLayer
+    }
 }
